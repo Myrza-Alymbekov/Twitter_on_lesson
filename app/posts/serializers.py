@@ -54,7 +54,7 @@ class StatusCommentSerializer(serializers.ModelSerializer):
         model = StatusComment
         fields = '__all__'
         read_only_fields = ['profile', 'comment']
-
+        "asdasfasd"
 
 # class StatusTypeSerializer(serializers.ModelSerializer):
 #
