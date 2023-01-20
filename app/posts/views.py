@@ -41,6 +41,11 @@ class TweetViewSet(viewsets.ModelViewSet):
     #     return queryset
 
     def perform_create(self, serializer):
+        """
+
+        :param serializer:
+        :return:
+        """
         serializer.save(profile=self.request.user.profile)
 
     @action(methods=['POST'], detail=True, permission_classes=[IsAuthenticated, ])
